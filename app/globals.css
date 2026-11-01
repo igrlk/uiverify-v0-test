@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display-family);
+  --font-serif: var(--font-serif-family);
+  --font-mono: var(--font-mono-family);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-espresso: var(--espresso);
+  --color-oat: var(--oat);
+  --color-sage: var(--sage);
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+:root {
+  color-scheme: light;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-display-family: Arial, Helvetica, sans-serif;
+  --font-serif-family: Georgia, 'Times New Roman', serif;
+  --font-mono-family: 'Courier New', monospace;
+  --background: oklch(0.96 0.018 83);
+  --foreground: oklch(0.24 0.04 43);
+  --card: oklch(0.985 0.012 83);
+  --card-foreground: oklch(0.24 0.04 43);
+  --primary: oklch(0.35 0.07 38);
+  --primary-foreground: oklch(0.97 0.02 83);
+  --muted: oklch(0.91 0.025 82);
+  --muted-foreground: oklch(0.5 0.035 48);
+  --border: oklch(0.84 0.035 68);
+  --ring: oklch(0.45 0.08 38);
+  --espresso: oklch(0.46 0.08 38);
+  --oat: oklch(0.8 0.08 74);
+  --sage: oklch(0.67 0.07 137);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { @apply bg-background text-foreground; margin: 0; }
+::selection { background: var(--oat); color: var(--foreground); }
