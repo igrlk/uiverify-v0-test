@@ -34,7 +34,7 @@ export default function Page() {
           <a className="transition-colors hover:text-foreground" href="#story">Our story</a>
           <a className="transition-colors hover:text-foreground" href="#visit">Visit</a>
         </nav>
-        <a href="#menu" className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
+        <a href="#menu" className="rounded-full bg-[#234b3b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#1b3b2e]">
           Order now
         </a>
       </header>
